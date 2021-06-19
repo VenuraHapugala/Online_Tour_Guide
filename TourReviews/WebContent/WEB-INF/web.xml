@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <servlet>
+    <servlet-name>verification</servlet-name>
+    <servlet-class>verification.tourist.verificationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>verification</servlet-name>
+    <url-pattern>/verify</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>tourReviewInsert</servlet-name>
+    <servlet-class>verification.tourist.tourReviewInsert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>tourReviewInsert</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>updateTourReviews</servlet-name>
+    <servlet-class>verification.tourist.updateTourReviewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateTourReviews</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>deleteTourReviews</servlet-name>
+    <servlet-class>verification.tourist.DeleteTourReviewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteTourReviews</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+
+</web-app>
